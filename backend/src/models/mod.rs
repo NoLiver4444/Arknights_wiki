@@ -1,2 +1,2 @@
 pub mod operator;
-pub use operator::Operator;
+pub use operator::{Operator, Class};
