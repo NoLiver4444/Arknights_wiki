@@ -1,0 +1,63 @@
+/* === Сброс и базовые стили === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Палитра Arknights */
+  --bg-primary: #0a0a0c;
+  --bg-secondary: #141418;
+  --bg-card: #1a1a20;
+  --accent-gold: #f5c518;
+  --accent-orange: #ff8c1a;
+  --accent-red: #d32029;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a8;
+  --border-color: #2a2a32;
+  --border-accent: #f5c518;
+
+  /* Шрифты */
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Кастомный скроллбар */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-gold);
+}
+
+/* Утилиты */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
