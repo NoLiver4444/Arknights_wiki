@@ -75,13 +75,13 @@ impl From<HellaOperator> for Operator {
         
         let rarity = parse_rarity(&data.rarity);
         let class = Class::from_str(&data.profession);
-        
+
         let avatar = format!(
-            "https://raw.githubusercontent.com/kiraio-moe/Arknights-Base/main/Spine%202D/{}/{}.png",
-            hella.value.id,
+            "https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avatars/{}.png",
             hella.value.id
         );
-        
+
+
         Operator {
             id: hella.value.id,
             name: data.name,

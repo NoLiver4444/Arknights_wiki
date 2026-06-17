@@ -11,7 +11,6 @@ mod cache;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    // Предзагрузка данных при старте сервера
     println!("Preloading operators data...");
     match handlers::operator_handler::fetch_operators_from_api().await {
         Ok(operators) => {
